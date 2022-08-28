@@ -8,14 +8,10 @@ class TaskBase(BaseModel):
 
 
 class TaskCreate(TaskBase):
-    """POST tasks のリクエストクラス"""
-
     pass
 
 
 class TaskCreateResponse(TaskCreate):
-    """POST tasks のレスポンスクラス"""
-
     id: int
 
     class Config:

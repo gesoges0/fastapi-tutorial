@@ -9,7 +9,7 @@ import api.schemas.task as task_schema  # fastapi request/response
 
 
 async def create_task(
-    db: Asyncsession, task_craete: task_schema.TaskCreate
+    db: AsyncSession, task_create: task_schema.TaskCreate
 ) -> task_model.Task:
     task = task_model.Task(**task_create.dict())
     db.add(task)

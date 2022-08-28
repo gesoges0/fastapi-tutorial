@@ -4,5 +4,5 @@ from pydantic import BaseModel
 class DoneResponse(BaseModel):
     id: int
 
-    class config:
+    class Config:
         orm_mode = True
